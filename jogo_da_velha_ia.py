@@ -190,7 +190,7 @@ class JanelaJogo(QWidget):
 
         if vencedor == JOGADOR_IA :
             self.jogo_ativo = False
-            texto = "Ia venceu!" 
+            texto = "A IA venceu!" 
             self.placarIa = self.placarIa + 1
             self.label_placar.setText(f"Jogador: {self.placarJogador} | IA: {self.placarIa} | Empates: {self.placarEmpate}")
             QMessageBox.information(self, "Fim de jogo", texto)
